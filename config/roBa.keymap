@@ -33,11 +33,6 @@
             bindings = <&to_layer_0 INT_MUHENKAN>;
             key-positions = <11 10>;
         };
-
-        MB1 {
-            bindings = <&mkp MB1>;
-            key-positions = <18 19>;
-        };
     };
 
     macros {
