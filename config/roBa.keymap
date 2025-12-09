@@ -10,6 +10,7 @@
 
 &trackball {
     // automouse-layer = <4>;
+
     scroll-layers = <5>;
 
     // arrows {
@@ -32,6 +33,21 @@
         muhennkann {
             bindings = <&to_layer_0 INT_MUHENKAN>;
             key-positions = <11 10>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <34 35>;
+        };
+
+        RightDesktop {
+            bindings = <&kp LG(LC(RIGHT_ARROW))>;
+            key-positions = <7 8>;
+        };
+
+        LeftDesktop {
+            bindings = <&kp LG(LC(LEFT_ARROW))>;
+            key-positions = <6 7>;
         };
     };
 
@@ -61,12 +77,12 @@
         default_layer {
             bindings = <
 &kp Q               &kp W    &kp E         &kp R         &kp T                                       &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S    &kp D         &kp F         &kp G        &mkp MB3      &msc SCRL_UP     &kp H        &kp J  &kp K      &kp L    &lt 3 SEMICOLON
-&mt LEFT_SHIFT Z    &kp X    &kp C         &kp V         &kp B        &mkp MB2      &msc SCRL_DOWN   &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp ESCAPE          &kp TAB  &kp LEFT_ALT  &kp LEFT_WIN  &lt 2 SPACE  &mkp MB1      &kp RIGHT_SHIFT  &lt 1 ENTER                             &mt RIGHT_CONTROL K_CONTEXT_MENU
+&mt LEFT_CONTROL A  &kp S    &kp D         &kp F         &kp G        &mkp MB3      &mkp MB5         &kp H        &kp J  &kp K      &kp L    &lt 3 SEMICOLON
+&mt LEFT_SHIFT Z    &kp X    &kp C         &kp V         &kp B        &mkp MB2      &mkp MB4         &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&none               &kp TAB  &kp LEFT_ALT  &kp LEFT_WIN  &lt 2 SPACE  &mkp MB1      &kp RIGHT_SHIFT  &lt 1 ENTER                             &mt RIGHT_CONTROL K_CONTEXT_MENU
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         lower {
