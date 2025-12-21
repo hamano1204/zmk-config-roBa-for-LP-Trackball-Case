@@ -32,16 +32,6 @@
     combos {
         compatible = "zmk,combos";
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <34 35>;
-        };
-
         RightDesktop {
             bindings = <&kp LG(LC(RIGHT_ARROW))>;
             key-positions = <7 8>;
@@ -50,6 +40,21 @@
         LeftDesktop {
             bindings = <&kp LG(LC(LEFT_ARROW))>;
             key-positions = <6 7>;
+        };
+
+        WinTab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <6 8>;
+        };
+
+        volup {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <2 3>;
+        };
+
+        voldown {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <12 13>;
         };
     };
 
@@ -89,10 +94,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W    &kp E         &kp R         &kp T                                       &kp Y        &kp U  &lt 5 I    &kp O              &kp P
-&mt LEFT_CONTROL A  &kp S    &kp D         &kp F         &kp G        &mkp MB3      &mkp MB5         &kp H        &kp J  &kp K      &kp L              &lt 3 SEMICOLON
-&mt LEFT_SHIFT Z    &kp X    &kp C         &kp V         &kp B        &mkp MB1      &mkp MB4         &kp N        &kp M  &kp COMMA  &mt RIGHT_ALT DOT  &mt RIGHT_SHIFT SLASH
-&none               &kp TAB  &kp LEFT_ALT  &kp LEFT_WIN  &lt 2 SPACE  &mkp MB1      &kp RIGHT_SHIFT  &lt 1 ENTER                                       &none
+&kp Q               &kp W     &kp E     &kp R         &kp T                                           &kp Y      &kp U  &lt 4 I              &kp O              &kp P
+&mt LEFT_CONTROL A  &kp S     &kp D     &kp F         &kp G             &mkp MB3         &mkp MB5     &kp H      &kp J  &kp K                &kp L              &lt 3 SEMICOLON
+&mt LEFT_SHIFT Z    &kp X     &kp C     &kp V         &kp B             &mkp MB1         &mkp MB4     &kp N      &kp M  &mt RIGHT_WIN COMMA  &mt RIGHT_ALT DOT  &mt RIGHT_SHIFT SLASH
+&none               &mkp MB2  &mkp MB1  &kp LEFT_ALT  &mt LEFT_WIN TAB  &lt 3 SPACE      &lt 2 ENTER  &kp RCTRL                                                 &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -100,42 +105,35 @@
 
         lower {
             bindings = <
-&kp EXCLAMATION            &kp AT_SIGN  &kp HASH          &kp DOLLAR         &kp PERCENT                               &kp CARET  &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&mt LEFT_CONTROL MINUS     &kp EQUAL    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &trans      &trans  &kp GRAVE  &kp SQT            &none         &none                 &kp RIGHT_CONTROL
-&mt LEFT_SHIFT UNDERSCORE  &kp PLUS     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE              &trans      &trans  &kp TILDE  &kp DOUBLE_QUOTES  &none         &none                 &kp RIGHT_SHIFT
-&trans                     &trans       &trans            &trans             &lt 6 SPACE           &trans      &trans  &trans                                                            &trans
+&kp EXCLAMATION            &kp AT_SIGN  &kp HASH          &kp DOLLAR         &kp PERCENT                                          &kp CARET  &kp AMPERSAND      &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&mt LEFT_CONTROL MINUS     &kp EQUAL    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp LG(LA(MINUS))      &trans  &kp GRAVE  &kp SQT            &none          &none                 &kp RIGHT_CONTROL
+&mt LEFT_SHIFT UNDERSCORE  &kp PLUS     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE              &trans                 &trans  &kp TILDE  &kp DOUBLE_QUOTES  &kp RIGHT_WIN  &kp RIGHT_ALT         &kp RIGHT_SHIFT
+&trans                     &trans       &trans            &trans             &trans                &lt 5 SPACE            &trans  &trans                                                             &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
         };
 
         raise {
             bindings = <
-&kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                      &kp NUMBER_6  &kp N7  &kp N8         &kp N9        &kp N0
-&mt LCTRL F1        &kp F2        &kp F3        &kp F4        &kp F5  &trans      &trans  &kp F6        &kp F7  &kp F8         &kp F9        &mt RCTRL F10
-&mt LEFT_SHIFT F11  &kp F12       &none         &none         &none   &trans      &trans  &none         &none   &kp RIGHT_GUI  &kp LEFT_ALT  &kp RIGHT_SHIFT
-&trans              &trans        &trans        &trans        &trans  &trans      &trans  &lt 6 ENTER                                        &trans
+&kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                    &kp NUMBER_6  &kp N7  &kp N8         &kp N9        &kp N0
+&mt LCTRL F1        &kp F2        &kp F3        &kp F4        &kp F5         &trans        &trans       &kp F6        &kp F7  &kp F8         &kp F9        &mt RCTRL F10
+&mt LEFT_SHIFT F11  &kp F12       &none         &kp PG_UP     &kp PAGE_DOWN  &mkp MB2      &trans       &none         &none   &kp RIGHT_GUI  &kp LEFT_ALT  &kp RIGHT_SHIFT
+&trans              &trans        &trans        &trans        &trans         &trans        &lt 5 ENTER  &trans                                             &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         ARROW {
             bindings = <
-&kp CAPSLOCK      &kp INSERT  &kp PRINTSCREEN     &kp SCROLLLOCK  &kp C_PAUSE                         &kp ESCAPE      &kp TAB         &kp UP_ARROW    &kp BACKSPACE    &kp DELETE
-&kp LEFT_CONTROL  &none       &kp K_CONTEXT_MENU  &mkp MB5        &kp HOME        &trans      &trans  &kp PAGE_UP     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT    &none       &none               &mkp MB4        &kp END         &trans      &trans  &kp PAGE_DOWN   &mkp MB1        &mkp MB3        &mkp MB2         &kp K_CONTEXT_MENU
-&trans            &trans      &trans              &trans          &kp LANGUAGE_2  &trans      &trans  &kp LANGUAGE_1                                                   &trans
+&kp CAPSLOCK      &kp INSERT  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp C_PAUSE                                      &kp ESCAPE     &kp TAB         &kp UP_ARROW    &kp BACKSPACE    &kp DELETE
+&kp LEFT_CONTROL  &none       &none            &mkp MB5        &kp HOME     &kp LG(TAB)         &trans          &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT    &none       &none            &mkp MB4        &kp END      &trans              &trans          &kp PAGE_DOWN  &mkp MB1        &mkp MB3        &mkp MB2         &kp K_CONTEXT_MENU
+&trans            &trans      &trans           &trans          &trans       &kp LANGUAGE_2      &kp LANGUAGE_1  &trans                                                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
-        };
-
-        MOUSE {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
-            >;
+            sensor-bindings = <&inc_dec_kp LS(LG(LEFT)) LG(LS(RIGHT))>;
         };
 
         SCROLL {
