@@ -97,7 +97,7 @@
 &kp Q               &kp W     &kp E     &kp R         &kp T                                           &kp Y          &kp U  &lt 4 I              &kp O              &kp P
 &mt LEFT_CONTROL A  &kp S     &kp D     &kp F         &kp G             &mkp MB3         &mkp MB5     &kp H          &kp J  &kp K                &kp L              &lt 3 SEMICOLON
 &mt LEFT_SHIFT Z    &kp X     &kp C     &kp V         &kp B             &mkp MB1         &mkp MB4     &kp N          &kp M  &mt RIGHT_WIN COMMA  &mt RIGHT_ALT DOT  &mt RIGHT_SHIFT SLASH
-&none               &mkp MB2  &mkp MB1  &kp LEFT_ALT  &mt LEFT_WIN TAB  &lt 3 SPACE      &lt 2 ENTER  &mt RCTRL TAB                                                 &none
+&none               &mkp MB2  &mkp MB1  &kp LEFT_ALT  &mt LEFT_WIN TAB  &lt 2 SPACE      &lt 1 ENTER  &mt RCTRL TAB                                                 &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
