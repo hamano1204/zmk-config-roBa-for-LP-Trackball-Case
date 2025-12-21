@@ -122,7 +122,7 @@
 &trans              &trans        &trans        &trans        &trans         &trans        &lt 5 ENTER  &trans                                             &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
         ARROW {
@@ -133,7 +133,7 @@
 &trans            &trans      &trans           &trans          &trans       &kp LANGUAGE_2      &kp LANGUAGE_1  &trans                                                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LS(LG(LEFT)) LG(LS(RIGHT))>;
+            sensor-bindings = <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>;
         };
 
         SCROLL {
