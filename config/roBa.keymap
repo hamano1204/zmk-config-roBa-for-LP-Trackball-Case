@@ -106,12 +106,12 @@
         lower {
             bindings = <
 &kp EXCLAMATION            &kp AT_SIGN  &kp HASH          &kp DOLLAR         &kp PERCENT                                          &kp CARET  &kp AMPERSAND      &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&mt LEFT_CONTROL MINUS     &kp EQUAL    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp LG(LA(MINUS))      &trans  &kp GRAVE  &kp SQT            &none          &none                 &kp RIGHT_CONTROL
+&mt LEFT_CONTROL MINUS     &kp EQUAL    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp LG(LA(EQUAL))      &trans  &kp GRAVE  &kp SQT            &none          &none                 &kp RIGHT_CONTROL
 &mt LEFT_SHIFT UNDERSCORE  &kp PLUS     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE              &trans                 &trans  &kp TILDE  &kp DOUBLE_QUOTES  &kp RIGHT_WIN  &kp RIGHT_ALT         &kp RIGHT_SHIFT
 &trans                     &trans       &trans            &trans             &trans                &lt 5 SPACE            &trans  &trans                                                             &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
+            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(EQUAL)>;
         };
 
         raise {
@@ -133,7 +133,7 @@
 &trans            &trans      &trans           &trans          &trans       &kp LANGUAGE_2      &kp LANGUAGE_1  &trans                                                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>;
+            sensor-bindings = <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
         };
 
         SCROLL {
