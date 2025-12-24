@@ -79,7 +79,7 @@
     };
 
     behaviors {
-        encoder_msc_down_up: encoder_msc_down_up {
+        encoder_msc_right_left: encoder_msc_right_left {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_RIGHT_LEFT";
             #sensor-binding-cells = <0>;
