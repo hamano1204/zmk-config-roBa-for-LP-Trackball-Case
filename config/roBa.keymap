@@ -49,12 +49,72 @@
 
         volup {
             bindings = <&kp C_VOLUME_UP>;
-            key-positions = <2 3>;
+            key-positions = <13 12>;
         };
 
         voldown {
             bindings = <&kp C_VOLUME_DOWN>;
-            key-positions = <12 13>;
+            key-positions = <25 24>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        capslock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <1 2>;
+        };
+
+        PScrn {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <3 4>;
+        };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <8 9>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+        };
+
+        mb1 {
+            bindings = <&mkp MB1>;
+            key-positions = <30 31>;
+        };
+
+        mb3 {
+            bindings = <&mkp MB3>;
+            key-positions = <31 32>;
+        };
+
+        mb2 {
+            bindings = <&mkp MB2>;
+            key-positions = <32 33>;
+        };
+
+        pgup {
+            bindings = <&kp PG_UP>;
+            key-positions = <17 18>;
+        };
+
+        pgdn {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <29 30>;
+        };
+
+        mb5 {
+            bindings = <&mkp MB5>;
+            key-positions = <14 13>;
+        };
+
+        mb4 {
+            bindings = <&mkp MB4>;
+            key-positions = <25 26>;
         };
     };
 
