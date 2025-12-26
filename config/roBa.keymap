@@ -32,21 +32,6 @@
     combos {
         compatible = "zmk,combos";
 
-        RightDesktop {
-            bindings = <&kp LG(LC(RIGHT_ARROW))>;
-            key-positions = <7 8>;
-        };
-
-        LeftDesktop {
-            bindings = <&kp LG(LC(LEFT_ARROW))>;
-            key-positions = <6 7>;
-        };
-
-        WinTab {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <6 8>;
-        };
-
         volup {
             bindings = <&kp C_VOLUME_UP>;
             key-positions = <13 12>;
@@ -84,17 +69,17 @@
 
         mb1 {
             bindings = <&mkp MB1>;
-            key-positions = <30 31>;
+            key-positions = <18 19>;
         };
 
         mb3 {
             bindings = <&mkp MB3>;
-            key-positions = <31 32>;
+            key-positions = <18 20>;
         };
 
         mb2 {
             bindings = <&mkp MB2>;
-            key-positions = <32 33>;
+            key-positions = <19 20>;
         };
 
         pgup {
@@ -115,6 +100,11 @@
         mb4 {
             bindings = <&mkp MB4>;
             key-positions = <25 26>;
+        };
+
+        bs {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 7>;
         };
     };
 
@@ -165,10 +155,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W     &kp E     &kp R         &kp T                                                  &kp Y                 &kp U    &lt 4 I              &kp O              &kp P
-&mt LEFT_CONTROL A  &kp S     &kp D     &kp F         &kp G                    &mkp MB3         &mkp MB5     &kp H                 &lt 6 J  &kp K                &kp L              &lt 3 SEMICOLON
-&mt LEFT_SHIFT Z    &kp X     &kp C     &kp V         &kp B                    &kp TAB          &mkp MB4     &kp N                 &kp M    &mt RIGHT_WIN COMMA  &mt RIGHT_ALT DOT  &mt RIGHT_SHIFT SLASH
-&none               &mkp MB2  &mkp MB1  &kp LEFT_ALT  &mt LEFT_WIN LANGUAGE_2  &lt 2 SPACE      &lt 1 ENTER  &mt RCTRL LANGUAGE_1                                                   &none
+&kp Q               &kp W     &kp E     &kp R         &kp T                                                  &kp Y             &kp U    &lt 4 I              &kp O              &kp P
+&mt LEFT_CONTROL A  &kp S     &kp D     &kp F         &kp G                    &mkp MB3         &mkp MB5     &kp H             &lt 6 J  &kp K                &kp L              &kp SEMICOLON
+&mt LEFT_SHIFT Z    &kp X     &kp C     &kp V         &kp B                    &kp TAB          &mkp MB4     &kp N             &kp M    &mt RIGHT_WIN COMMA  &mt RIGHT_ALT DOT  &mt RIGHT_SHIFT SLASH
+&none               &mkp MB2  &mkp MB1  &kp LEFT_ALT  &mt LEFT_WIN LANGUAGE_2  &lt 2 SPACE      &lt 1 ENTER  &lt 3 LANGUAGE_1                                                   &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
