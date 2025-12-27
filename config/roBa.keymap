@@ -155,10 +155,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W     &kp E     &kp R         &kp T                                                  &kp Y             &kp U  &lt 4 I              &kp O              &kp P
-&mt LEFT_CONTROL A  &kp S     &kp D     &kp F         &kp G                    &mkp MB3         &mkp MB5     &kp H             &kp L  &kp K                &kp L              &kp SEMICOLON
-&mt LEFT_SHIFT Z    &kp X     &kp C     &kp V         &kp B                    &kp TAB          &mkp MB4     &kp N             &kp M  &mt RIGHT_WIN COMMA  &mt RIGHT_ALT DOT  &mt RIGHT_SHIFT SLASH
-&none               &mkp MB2  &mkp MB1  &kp LEFT_ALT  &mt LEFT_WIN LANGUAGE_2  &lt 2 SPACE      &lt 1 ENTER  &lt 2 LANGUAGE_1                                                 &none
+&kp Q               &kp W  &kp E         &kp R         &kp T                                                        &kp Y        &kp U  &lt 4 I              &kp O              &kp P
+&mt LEFT_CONTROL A  &kp S  &kp D         &kp F         &kp G        &mkp MB3                  &mkp MB5              &kp H        &kp L  &kp K                &kp L              &kp SEMICOLON
+&mt LEFT_SHIFT Z    &kp X  &kp C         &kp V         &kp B        &kp TAB                   &mkp MB4              &kp N        &kp M  &mt RIGHT_WIN COMMA  &mt RIGHT_ALT DOT  &mt RIGHT_SHIFT SLASH
+&none               &none  &kp LEFT_ALT  &kp LEFT_WIN  &lt 2 SPACE  &mt RCTRL LANGUAGE_2      &mt RCTRL LANGUAGE_1  &lt 1 ENTER                                                 &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -166,10 +166,10 @@
 
         lower {
             bindings = <
-&kp NUMBER_1            &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp N5                                         &kp NUMBER_6  &kp N7   &kp N8            &kp N9            &kp N0
-&mt LEFT_CONTROL MINUS  &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &trans           &trans  &kp GRAVE     &kp SQT  &kp INT_RO        &kp F11           &mt RIGHT_CONTROL F12
-&mt LEFT_SHIFT F1       &kp F2        &kp F3            &kp F4             &kp F5                &trans           &trans  &kp F6        &kp F7   &mt RIGHT_WIN F8  &mt RIGHT_ALT F9  &mt RIGHT_SHIFT F10
-&trans                  &trans        &trans            &trans             &trans                &lt 3 SPACE      &trans  &trans                                                     &trans
+&kp NUMBER_1            &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp N5                                    &kp NUMBER_6  &kp N7   &kp N8            &kp N9            &kp N0
+&mt LEFT_CONTROL MINUS  &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &trans      &trans  &kp GRAVE     &kp SQT  &kp INT_RO        &kp F11           &mt RIGHT_CONTROL F12
+&mt LEFT_SHIFT F1       &kp F2        &kp F3            &kp F4             &kp F5                &trans      &trans  &kp F6        &kp F7   &mt RIGHT_WIN F8  &mt RIGHT_ALT F9  &mt RIGHT_SHIFT F10
+&trans                  &trans        &trans            &trans             &lt 3 SPACE           &trans      &trans  &trans                                                     &trans
             >;
 
             sensor-bindings = <&encoder_msc_right_left>;
@@ -177,10 +177,10 @@
 
         raise {
             bindings = <
-&kp CAPSLOCK      &kp INSERT  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp C_PAUSE                           &kp ESCAPE     &kp TAB         &kp UP_ARROW    &kp BACKSPACE    &kp DELETE
-&kp LEFT_CONTROL  &none       &none            &mkp MB5        &kp HOME     &trans      &trans       &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RCTRL
-&kp LEFT_SHIFT    &none       &none            &mkp MB4        &kp END      &trans      &trans       &kp PAGE_DOWN  &mkp MB1        &mkp MB3        &mkp MB2         &kp RIGHT_SHIFT
-&trans            &trans      &trans           &trans          &trans       &trans      &lt 3 ENTER  &trans                                                          &trans
+&kp CAPSLOCK      &kp INSERT  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp C_PAUSE                      &kp ESCAPE     &kp TAB         &kp UP_ARROW    &kp BACKSPACE    &kp DELETE
+&kp LEFT_CONTROL  &none       &none            &mkp MB5        &kp HOME     &trans      &trans  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RCTRL
+&kp LEFT_SHIFT    &none       &none            &mkp MB4        &kp END      &trans      &trans  &kp PAGE_DOWN  &mkp MB1        &mkp MB3        &mkp MB2         &kp RIGHT_SHIFT
+&trans            &trans      &trans           &trans          &trans       &trans      &trans  &lt 3 ENTER                                                     &trans
             >;
 
             sensor-bindings = <&encoder_msc_right_left>;
