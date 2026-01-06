@@ -33,16 +33,6 @@
     combos {
         compatible = "zmk,combos";
 
-        volup {
-            bindings = <&kp C_VOLUME_UP>;
-            key-positions = <13 12>;
-        };
-
-        voldown {
-            bindings = <&kp C_VOLUME_DOWN>;
-            key-positions = <25 24>;
-        };
-
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
@@ -83,29 +73,24 @@
             key-positions = <19 20>;
         };
 
-        pgup {
-            bindings = <&kp PG_UP>;
-            key-positions = <17 18>;
-        };
-
-        pgdn {
-            bindings = <&kp PAGE_DOWN>;
+        lang_ja {
+            bindings = <&kp LANG1>;
             key-positions = <29 30>;
         };
 
-        mb5 {
-            bindings = <&mkp MB5>;
-            key-positions = <14 13>;
-        };
-
-        mb4 {
-            bindings = <&mkp MB4>;
+        lang_en {
+            bindings = <&kp LANGUAGE_2>;
             key-positions = <25 26>;
         };
 
         bs {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 7>;
+        };
+
+        ctrl {
+            bindings = <&kp RCTRL>;
+            key-positions = <20 21>;
         };
     };
 
@@ -167,10 +152,10 @@
 
         lower {
             bindings = <
-&kp EXCLAMATION            &kp AT_SIGN  &kp HASH          &kp DOLLAR         &kp PERCENT                        &kp CARET  &kp AMPERSAND      &kp ASTERISK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&mt LEFT_CONTROL MINUS     &kp EQUAL    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans      &trans  &kp GRAVE  &kp SQT            &kp INTERNATIONAL_1  &none                 &kp RIGHT_CONTROL
-&mt LEFT_SHIFT UNDERSCORE  &kp PLUS     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE       &trans      &trans  &kp TILDE  &kp DOUBLE_QUOTES  &kp RIGHT_WIN        &kp RIGHT_ALT         &kp RIGHT_SHIFT
-&trans                     &trans       &trans            &trans             &lt 5 SPACE    &trans      &trans  &trans                                                                   &trans
+&kp EXCLAMATION            &kp AT_SIGN  &kp HASH          &kp DOLLAR         &kp PERCENT                               &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&mt LEFT_CONTROL MINUS     &kp EQUAL    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans      &kp PAGE_UP    &kp GRAVE  &none          &kp UP_ARROW  &kp INTERNATIONAL_1   &mt RIGHT_CONTROL SQT
+&mt LEFT_SHIFT UNDERSCORE  &kp PLUS     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE       &trans      &kp PAGE_DOWN  &kp TILDE  &kp LEFT       &kp DOWN      &kp RIGHT_ARROW       &mt RIGHT_SHIFT DOUBLE_QUOTES
+&trans                     &trans       &trans            &trans             &lt 5 SPACE    &trans      &trans         &trans                                                        &trans
             >;
 
             sensor-bindings = <&encoder_msc_right_left>;
@@ -178,10 +163,10 @@
 
         raise {
             bindings = <
-&kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                        &kp NUMBER_6  &kp N7  &kp N8         &kp N9        &kp N0
-&mt LCTRL F1        &kp F2        &kp F3        &kp F4        &kp F5    &trans      &trans  &kp F6        &kp F7  &kp F8         &kp F9        &mt RCTRL F10
-&mt LEFT_SHIFT F11  &kp F12       &mkp MB2      &mkp MB3      &mkp MB1  &trans      &trans  &none         &none   &kp RIGHT_GUI  &kp LEFT_ALT  &kp RIGHT_SHIFT
-&trans              &trans        &trans        &trans        &trans    &trans      &trans  &lt 5 ENTER                                        &trans
+&kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                &kp NUMBER_6    &kp N7       &kp N8         &kp N9  &kp N0
+&mt LCTRL F1        &kp F2        &kp F3        &kp F4        &kp F5          &trans      &kp HOME  &kp F6          &kp F7       &kp F8         &kp F9  &mt RCTRL F10
+&mt LEFT_SHIFT F11  &kp F12       &kp END       &kp HOME      &kp LANGUAGE_2  &trans      &kp END   &kp LANGUAGE_1  &kp PAGE_UP  &kp PAGE_DOWN  &none   &kp RIGHT_SHIFT
+&trans              &trans        &trans        &trans        &trans          &trans      &trans    &lt 5 ENTER                                         &trans
             >;
 
             sensor-bindings = <&encoder_msc_right_left>;
