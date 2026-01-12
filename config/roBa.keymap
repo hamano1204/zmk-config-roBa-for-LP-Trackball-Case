@@ -136,10 +136,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W           &lt 3 E         &kp R        &kp T                                                             &kp Y        &kp U        &lt 4 I             &kp O                &kp P
-&kp A             &kp S           &kp D           &kp F        &kp G        &mkp MB3                       &mkp MB5              &kp H        &kp J        &kp K               &kp L                &lt 3 SEMICOLON
-&mt LEFT_SHIFT Z  &mt LEFT_ALT X  &mt LEFT_WIN C  &mt LCTRL V  &kp B        &kp TAB                        &mkp MB4              &kp N        &mt LCTRL M  &mt LEFT_WIN COMMA  &mt LEFT_ALT PERIOD  &mt LEFT_SHIFT SLASH
-&none             &kp LEFT_ALT    &kp LEFT_WIN    &lt 3 TAB    &lt 2 SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RCTRL LANGUAGE_1  &lt 1 ENTER                                                        &none
+&kp Q        &kp W             &lt 3 E         &kp R           &kp T                                                             &kp Y        &kp U           &lt 4 I             &kp O                  &kp P
+&kp A        &kp S             &kp D           &kp F           &kp G        &mkp MB3                       &mkp MB5              &kp H        &kp J           &kp K               &kp L                  &kp SEMICOLON
+&mt LCTRL Z  &mt LEFT_SHIFT X  &mt LEFT_ALT C  &mt LEFT_WIN V  &kp B        &kp TAB                        &mkp MB4              &kp N        &mt LEFT_WIN M  &mt LEFT_ALT COMMA  &mt LEFT_SHIFT PERIOD  &mt LCTRL SLASH
+&none        &kp LEFT_ALT      &kp LEFT_WIN    &lt 3 TAB       &lt 2 SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RCTRL LANGUAGE_1  &lt 1 ENTER                                                             &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -147,10 +147,10 @@
 
         lower {
             bindings = <
-&kp EXCLAMATION            &kp AT_SIGN     &kp HASH                 &kp DOLLAR             &kp PERCENT                               &kp CARET  &kp AMPERSAND   &kp ASTERISK       &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS
-&kp MINUS                  &kp EQUAL       &kp LEFT_BRACKET         &kp RIGHT_BRACKET      &kp BACKSLASH  &trans      &kp PAGE_UP    &kp GRAVE  &none           &kp UP_ARROW       &kp INTERNATIONAL_1       &kp SQT
-&mt LEFT_SHIFT UNDERSCORE  &mt LCTRL PLUS  &mt LEFT_ALT LEFT_BRACE  &mt LCTRL RIGHT_BRACE  &kp PIPE       &trans      &kp PAGE_DOWN  &kp TILDE  &mt LCTRL LEFT  &mt LEFT_WIN DOWN  &mt LEFT_ALT RIGHT_ARROW  &mt LEFT_SHIFT DOUBLE_QUOTES
-&trans                     &trans          &trans                   &trans                 &lt 5 SPACE    &trans      &trans         &trans                                                                  &trans
+&kp EXCLAMATION       &kp AT_SIGN          &kp HASH                 &kp DOLLAR                &kp PERCENT                               &kp CARET  &kp AMPERSAND      &kp ASTERISK       &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS
+&kp MINUS             &kp EQUAL            &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &kp BACKSLASH  &trans      &kp PAGE_UP    &kp GRAVE  &none              &kp UP_ARROW       &kp INTERNATIONAL_1         &kp SQT
+&mt LCTRL UNDERSCORE  &mt LEFT_SHIFT PLUS  &mt LEFT_ALT LEFT_BRACE  &mt LEFT_WIN RIGHT_BRACE  &kp PIPE       &trans      &kp PAGE_DOWN  &kp TILDE  &mt LEFT_WIN LEFT  &mt LEFT_ALT DOWN  &mt LEFT_SHIFT RIGHT_ARROW  &mt LCTRL DOUBLE_QUOTES
+&trans                &trans               &trans                   &trans                    &lt 5 SPACE    &trans      &trans         &trans                                                                       &trans
             >;
 
             sensor-bindings = <&encoder_msc_right_left>;
@@ -158,10 +158,10 @@
 
         raise {
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                         &kp NUMBER_6  &kp N7     &kp N8        &kp N9        &kp N0
-&kp LCTRL       &kp F2        &kp F3        &kp F4        &kp F5   &trans      &kp HOME  &kp F6        &kp F7     &kp F8        &kp F9        &kp F10
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL     &kp F11  &trans      &kp END   &kp F12       &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT
-&trans          &trans        &trans        &trans        &trans   &trans      &trans    &lt 5 ENTER                                          &trans
+&kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4  &kp N5                         &kp NUMBER_6  &kp N7        &kp N8        &kp N9          &kp N0
+&kp F1        &kp F2          &kp F3        &kp F4        &kp F5   &trans      &kp HOME  &kp F6        &kp F7        &kp F8        &kp F9          &kp F10
+&kp LCTRL     &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &kp F11  &trans      &kp END   &kp F12       &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL
+&trans        &trans          &trans        &trans        &trans   &trans      &trans    &lt 5 ENTER                                               &trans
             >;
 
             sensor-bindings = <&encoder_msc_right_left>;
@@ -169,10 +169,10 @@
 
         ARROW {
             bindings = <
-&mkp MB5        &none         &none         &kp ESCAPE  &kp HOME                            &kp PG_UP       &kp TAB         &kp UP_ARROW    &kp BACKSPACE    &kp DELETE
-&mkp MB4        &mkp MB2      &mkp MB3      &mkp MB1    &kp END         &trans      &trans  &kp PAGE_DOWN   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL   &none           &trans      &trans  &none           &kp LCTRL       &kp LEFT_WIN    &kp LEFT_ALT     &kp LEFT_SHIFT
-&trans          &trans        &trans        &trans      &kp LANGUAGE_2  &trans      &trans  &kp LANGUAGE_1                                                   &trans
+&mkp MB5   &none           &none         &kp ESCAPE    &kp HOME                      &kp PG_UP      &kp TAB         &kp UP_ARROW    &kp BACKSPACE    &kp DELETE
+&mkp MB4   &mkp MB2        &mkp MB3      &mkp MB1      &kp END   &trans      &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &none     &trans      &trans  &none          &kp LEFT_WIN    &kp LEFT_ALT    &kp LEFT_SHIFT   &kp LCTRL
+&trans     &trans          &trans        &trans        &trans    &trans      &trans  &trans                                                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_right_left>;
@@ -180,10 +180,10 @@
 
         SCROLL {
             bindings = <
-&trans          &trans        &trans        &trans     &trans                         &trans     &trans     &trans        &trans        &trans
-&trans          &trans        &trans        &trans     &trans     &trans      &trans  &trans     &trans     &trans        &trans        &trans
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL  &trans     &trans      &trans  &trans     &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT
-&trans          &trans        &trans        &trans     &kp LANG2  &trans      &trans  &kp LANG1                                         &trans
+&trans     &trans          &trans        &trans        &trans                      &trans  &trans        &trans        &trans          &trans
+&trans     &trans          &trans        &trans        &trans  &trans      &trans  &trans  &trans        &trans        &trans          &trans
+&kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &trans  &trans      &trans  &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL
+&trans     &trans          &trans        &trans        &trans  &trans      &trans  &trans                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -191,10 +191,10 @@
 
         BT {
             bindings = <
-&none           &kp INS       &none         &kp SCROLLLOCK  &kp C_PAUSE                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR
-&trans          &trans        &trans        &trans          &trans       &trans      &trans       &out OUT_BLE  &trans        &trans        &trans        &trans
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL       &trans       &trans      &bootloader  &out OUT_USB  &kp LCTRL     &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT
-&trans          &trans        &trans        &trans          &trans       &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&none      &kp INS         &none         &kp SCROLLLOCK  &kp C_PAUSE                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_CLR
+&trans     &trans          &trans        &trans          &trans       &trans      &trans       &out OUT_BLE  &trans        &trans        &trans          &trans
+&kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN    &trans       &trans      &bootloader  &out OUT_USB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL
+&trans     &trans          &trans        &trans          &trans       &trans      &trans       &trans                                                    &bt BT_CLR_ALL
             >;
         };
     };
