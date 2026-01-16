@@ -137,7 +137,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W           &kp E           &kp R         &kp T                                                  &kp Y                 &kp U  &lt 4 I             &kp O                &kp P
-&kp A             &kp S           &kp D           &kp F         &kp G                    &mkp MB3         &mkp MB5     &kp H                 &kp J  &kp K               &kp L                &lt 3 SEMICOLON
+&mt LCTRL A       &kp S           &kp D           &kp F         &kp G                    &mkp MB3         &mkp MB5     &kp H                 &kp J  &kp K               &kp L                &lt 3 SEMICOLON
 &mt LEFT_SHIFT Z  &mt LEFT_ALT X  &mt LEFT_WIN C  &kp V         &kp B                    &kp TAB          &mkp MB4     &kp N                 &kp M  &mt LEFT_WIN COMMA  &mt LEFT_ALT PERIOD  &mt LEFT_SHIFT SLASH
 &none             &kp LEFT_ALT    &kp LEFT_WIN    &kp LEFT_ALT  &mt LEFT_WIN LANGUAGE_2  &lt 2 SPACE      &lt 1 ENTER  &mt LCTRL LANGUAGE_1                                                  &none
             >;
@@ -147,10 +147,10 @@
 
         lower {
             bindings = <
-&kp EXCLAMATION            &kp AT_SIGN        &kp HASH                 &kp DOLLAR         &kp PERCENT                               &kp CARET  &kp AMPERSAND      &kp ASTERISK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp MINUS                  &kp EQUAL          &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &kp BACKSLASH  &trans      &kp PAGE_UP    &kp GRAVE  &kp SQT            &kp INTERNATIONAL_1  &none                 &none
-&mt LEFT_SHIFT UNDERSCORE  &mt LEFT_ALT PLUS  &mt LEFT_WIN LEFT_BRACE  &kp RIGHT_BRACE    &kp PIPE       &trans      &kp PAGE_DOWN  &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_WIN         &kp LEFT_ALT          &kp LEFT_SHIFT
-&trans                     &trans             &trans                   &trans             &lt 5 SPACE    &trans      &trans         &trans                                                                   &trans
+&kp EXCLAMATION            &kp AT_SIGN        &kp HASH                 &kp DOLLAR         &kp PERCENT                                    &kp CARET  &kp AMPERSAND      &kp ASTERISK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&mt LCTRL MINUS            &kp EQUAL          &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &kp BACKSLASH  &trans           &kp PAGE_UP    &kp GRAVE  &kp SQT            &kp INTERNATIONAL_1  &none                 &none
+&mt LEFT_SHIFT UNDERSCORE  &mt LEFT_ALT PLUS  &mt LEFT_WIN LEFT_BRACE  &kp RIGHT_BRACE    &kp PIPE       &trans           &kp PAGE_DOWN  &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_WIN         &kp LEFT_ALT          &kp LEFT_SHIFT
+&trans                     &trans             &trans                   &trans             &trans         &lt 5 SPACE      &trans         &trans                                                                   &trans
             >;
 
             sensor-bindings = <&encoder_msc_right_left>;
@@ -158,10 +158,10 @@
 
         raise {
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                         &kp NUMBER_6  &kp N7         &kp N8        &kp N9        &kp N0
-&kp F1          &kp F2        &kp F3        &kp F4        &kp F5   &trans      &kp HOME  &kp F6        &kp F7         &kp F8        &kp F9        &kp F10
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &kp F11       &kp F12  &trans      &kp END   &kp PG_UP     &kp PAGE_DOWN  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT
-&trans          &trans        &trans        &trans        &trans   &trans      &trans    &lt 5 ENTER                                              &trans
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                            &kp NUMBER_6  &kp N7         &kp N8        &kp N9        &kp N0
+&mt LCTRL F1    &kp F2        &kp F3        &kp F4        &kp F5   &trans      &kp HOME     &kp F6        &kp F7         &kp F8        &kp F9        &kp F10
+&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &kp F11       &kp F12  &trans      &kp END      &kp PG_UP     &kp PAGE_DOWN  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT
+&trans          &trans        &trans        &trans        &trans   &trans      &lt 5 ENTER  &trans                                                   &trans
             >;
 
             sensor-bindings = <&encoder_msc_right_left>;
@@ -169,10 +169,10 @@
 
         ARROW {
             bindings = <
-&mkp MB5        &none         &none         &kp ESCAPE  &kp HOME                            &kp PG_UP       &kp TAB         &kp UP_ARROW    &kp BACKSPACE    &kp DELETE
-&mkp MB4        &mkp MB2      &mkp MB3      &mkp MB1    &kp END         &trans      &trans  &kp PAGE_DOWN   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &none       &none           &trans      &trans  &none           &none           &kp LEFT_WIN    &kp LEFT_ALT     &kp LEFT_SHIFT
-&trans          &trans        &trans        &trans      &kp LANGUAGE_2  &trans      &trans  &kp LANGUAGE_1                                                   &trans
+&trans          &none         &none         &trans    &kp HOME                                 &kp PG_UP      &kp TAB         &kp UP_ARROW    &kp BACKSPACE    &kp DELETE
+&kp LCTRL       &mkp MB2      &mkp MB3      &mkp MB1  &kp END   &trans         &trans          &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &none     &none     &trans         &trans          &none          &none           &kp LEFT_WIN    &kp LEFT_ALT     &kp LEFT_SHIFT
+&trans          &trans        &trans        &trans    &trans    &kp LANG2      &kp LANGUAGE_1  &trans                                                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_right_left>;
