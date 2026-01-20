@@ -142,7 +142,7 @@
 &none             &kp LEFT_ALT    &kp LEFT_WIN    &kp LEFT_ALT  &mt LEFT_WIN LANGUAGE_2  &lt 2 SPACE      &lt 1 ENTER  &mt LCTRL LANGUAGE_1                                                  &none
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&inc_dec_kp LA(ESCAPE) LA(LS(ESC))>;
         };
 
         lower {
@@ -153,7 +153,7 @@
 &trans                     &trans             &trans                   &trans             &trans         &lt 5 SPACE      &trans         &trans                                                                   &trans
             >;
 
-            sensor-bindings = <&encoder_msc_right_left>;
+            sensor-bindings = <&inc_dec_kp LG(LC(RIGHT)) LC(LG(LEFT))>;
         };
 
         raise {
@@ -164,7 +164,7 @@
 &trans          &trans        &trans        &trans        &trans   &trans      &lt 5 ENTER  &trans                                                   &trans
             >;
 
-            sensor-bindings = <&encoder_msc_right_left>;
+            sensor-bindings = <&inc_dec_kp LC(PAGE_DOWN) LC(PAGE_UP)>;
         };
 
         ARROW {
@@ -175,7 +175,7 @@
 &trans          &trans        &trans        &trans    &trans    &kp LANG2      &kp LANGUAGE_1  &trans                                                          &trans
             >;
 
-            sensor-bindings = <&encoder_msc_right_left>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SCROLL {
@@ -196,6 +196,8 @@
 &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &trans          &trans       &trans      &bootloader  &out OUT_USB  &trans        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT
 &trans          &trans        &trans        &trans          &trans       &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
     };
 };
