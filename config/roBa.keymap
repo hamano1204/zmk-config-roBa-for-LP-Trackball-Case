@@ -100,6 +100,11 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <8 7>;
         };
+
+        gestuer4 {
+            bindings = <&mo 6>;
+            key-positions = <18 19 20 21>;
+        };
     };
 
     macros {
