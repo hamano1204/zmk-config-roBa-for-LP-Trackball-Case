@@ -27,6 +27,18 @@
     //     wait-ms = <5>;
     //     tap-ms = <5>;
     // };
+    arrows {
+        layers = <6>;
+        bindings =
+            <&kp LG(LC(RIGHT_ARROW))>,
+            <&kp LG(LC(LEFT_ARROW))>,
+            <&kp LG(TAB)>,
+            <&kp LG(D)>;
+        tick = <10>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
+
 };
 
 / {
