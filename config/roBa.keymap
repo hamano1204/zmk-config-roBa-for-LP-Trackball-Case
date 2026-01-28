@@ -40,6 +40,18 @@
         wait-ms = <20>;
         tap-ms = <150>;
     };
+    arrows {
+        layers = <7>;
+        bindings =
+            <&kp LG(LS(RIGHT_ARROW))>,
+            <&kp LG(LS(LEFT_ARROW))>,
+            <&kp LG(LS(UP_ARROW))>,
+            <&kp LG(LS(DOWN_ARROW))>;
+
+        tick = <640>;
+        wait-ms = <20>;
+        tap-ms = <150>;
+    };
 };
 
 / {
