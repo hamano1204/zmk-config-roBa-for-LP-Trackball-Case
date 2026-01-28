@@ -36,8 +36,8 @@
             <&kp LG(TAB)>,
             <&kp LG(D)>;
 
-        tick = <20>;
-        wait-ms = <80>;
+        tick = <80>;
+        wait-ms = <20>;
         tap-ms = <150>;
     };
 };
