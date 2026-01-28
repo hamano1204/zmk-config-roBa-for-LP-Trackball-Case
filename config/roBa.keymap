@@ -28,7 +28,7 @@
     //     tap-ms = <5>;
     // };
 
-    arrows_dm {
+    arrows {
         layers = <6>;
         bindings =
             <&kp LG(LC(RIGHT_ARROW))>,
