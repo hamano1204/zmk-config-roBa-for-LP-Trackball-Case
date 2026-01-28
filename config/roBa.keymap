@@ -40,7 +40,7 @@
         wait-ms = <20>;
         tap-ms = <150>;
     };
-    arrows {
+    arrows_shift {
         layers = <7>;
         bindings =
             <&kp LG(LS(RIGHT_ARROW))>,
